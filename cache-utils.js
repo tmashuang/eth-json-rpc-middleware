@@ -58,6 +58,8 @@ function blockTagParamIndex (payload) {
     case 'eth_getBalance':
     case 'eth_getCode':
     case 'eth_getTransactionCount':
+    case 'eth_call':
+      return 1
     case 'eth_getBlockByNumber':
       return 0
     // there is no blockTag
